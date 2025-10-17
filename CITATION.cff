@@ -1,0 +1,24 @@
+
+## Quickstart
+
+### Windows (PowerShell)
+`powershell
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+python -m src.dt_gate.simulate --epochs 200 --seeds 1 2 --variant Proposed
+python .\scripts\make_figs.py --inputs data\outputs\epochs_log.csv --outdir data\outputs
+
+@"
+cff-version: 1.2.0
+title: "AI-Enabled Digital Twin Gate for Secure & Resilient 6G (Simulation Stack)"
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "AlKarawi"
+    given-names: "Yassir"
+repository-code: "https://github.com/YassirALKarawi/dt-gate-6g"
+license: MIT
+version: v0.1.0
+date-released: 2025-10-17

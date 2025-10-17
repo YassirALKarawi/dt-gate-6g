@@ -1,0 +1,13 @@
+name: Bug report
+description: Report a reproducible bug
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+  - type: input
+    attributes:
+      label: Steps to reproduce
+  - type: input
+    attributes:
+      label: Python version
