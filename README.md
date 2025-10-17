@@ -1,3 +1,5 @@
+Requires: Python 3.11+ (tested on 3.11/3.12/3.13)
+
 ## Quick links
 - ▶️ **Colab (minimal notebook):** `notebooks/00_colab_minimal.ipynb`
 - 📊 **Summary CSV:** `data/outputs/table_main.csv`
