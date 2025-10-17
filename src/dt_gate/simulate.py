@@ -122,3 +122,6 @@ def cli():
     df.to_csv("data/outputs/epochs_log.csv", index=False)
     save_summary_and_csv(df)
     print("Logs saved to data/outputs/epochs_log.csv")
+
+if __name__ == '__main__':
+    cli()
