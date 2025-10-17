@@ -1,3 +1,11 @@
+## Quick links
+- ▶️ **Colab (minimal notebook):** `notebooks/00_colab_minimal.ipynb`
+- 📊 **Summary CSV:** `data/outputs/table_main.csv`
+- 📈 **Figures:** `data/outputs/l99_Proposed.png`, `data/outputs/risk_Proposed.png`
+
+## Sample results
+![L99](data/outputs/l99_Proposed.png)
+![Risk](data/outputs/risk_Proposed.png)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YassirALKarawi/dt-gate-6g/blob/main/notebooks/00_colab_minimal.ipynb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
