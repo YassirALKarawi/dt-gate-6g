@@ -1,3 +1,8 @@
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YassirALKarawi/dt-gate-6g/blob/main/notebooks/00_colab_minimal.ipynb)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+
 # AI-Enabled Digital Twin Gate for Secure & Resilient 6G (Simulation Stack)
 
 This repository provides a Python-only simulation of the paper's control loop:
