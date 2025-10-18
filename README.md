@@ -1,3 +1,33 @@
+# AI-Enabled Digital Twin Gate for Secure & Resilient 6G (Python Simulation)
+
+[![CI: build & refresh outputs](https://github.com/YOUR_USER/dt-gate-6g/actions/workflows/build-results.yml/badge.svg)](../../actions)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebooks/00_colab_minimal.ipynb)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+
+Python-only simulation of the paper’s control loop: EKF/NIS trust (τ), Kingman + Cantelli for reliability, tube-based tightening, risk scoring with isotonic calibration + randomized smoothing (CVaR), and a projected optimizer.  
+All figures/tables below are generated from `data/outputs/`.
+
+---
+
+## Quickstart
+
+```bash
+# optional venv
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# run simulation (700 epochs, 5 seeds)
+python -m src.dt_gate.simulate --epochs 700 --seeds 1 2 3 4 5 --variant Proposed
+
+# generate figures + tables
+python scripts/make_figs.py --inputs data/outputs/*.csv --outdir data/outputs
+
+# update README tables from CSVs
+python scripts/update_readme.py
+
+
+
 <p align="center">
   <a href="https://github.com/YassirALKarawi/dt-gate-6g/actions">
     <img alt="CI" src="https://img.shields.io/github/actions/workflow/status/YassirALKarawi/dt-gate-6g/ci.yml?branch=main">
